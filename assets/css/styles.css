@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+img{
+    
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    width: max-content;
+}
+
+.mensajes {
+    background-color: aqua;
+    width: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contactos {
+    background-color: yellow;
+    width: 25%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    width: 30vh;
+}
