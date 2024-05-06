@@ -1,49 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Messenger</title>
-    <link rel="stylesheet" href="./assets/css/styles.css">
-</head>
-<body>
-    <main>
-        <div class="container">
-            
-            <div class="contactos">
-                <div  class="topnav">
-                    <div class="fotoperfil">
-                        <img src="./assets/imgs/maria.jpg" alt="Profile">
-                        <div class="status">
-                            <h5>Maria</h5>
-                            <p>Activo Ahora</p>
-                        </div>
-                    </div>
-                    <div class="icons">
-                    </div>
-                    
-                </div>
-                <div class="newchat">
-                    <button>Nuevo Chat</button>
-                </div>
-               <div class="chats">
-                <div id="Juanita"></div>
-                <div id="Alberto"></div>
-                <div id="Ignacio"></div>
-                <div id="Cristian"></div>
-                <div id="Maria Jose"></div>
-                <div id="Gonzalo"></div>
-                <div id="Juan Pablo"></div>
-                <div id="Magdalena"></div>
-               </div>
+    <!--GoogleFonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <!--FontAwesome-->
+    <script src="https://kit.fontawesome.com/76066ff5d0.js" crossorigin="anonymous"></script>
+    <!--CSS-->
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+  </head>
+  <body>
+      <main class="container">
+        <div class="contactos">
+          <div class="topnav">
+            <div class="fotoperfil">
+              <img
+                src="./assets/imgs/maria.jpg"
+                alt="Profile"
+                class="profileme"
+              />
+              <div class="status">
+                <p class="nombre">Maria</p>
+                <p class="estado">Activa Ahora</p>
+              </div>
             </div>
-            <div class="mensajes">
-                <img src="./assets/imgs/hand.png" alt="Icono">
-                <h1>Comienza el Networking</h1>
-                <p>Presiona el botón <strong>"Nuevo chat"</strong>  para comenzar a crear nuevas <br> redes de contacto para tu empresa o emprendimiento.</p>
-    
+            <div class="icons"><i class="fa-regular fa-message"></i><i class="fa-solid fa-sliders"></i></div>
+          </div>
+          <div class="newchat">
+            <button>Nuevo Chat</button>
+          </div>
+          <div class="chats">
+            <div class="chat">
+              <img
+                src="./assets/imgs/Screen Shot 2018-11-28 at 15.27.14.jpg"
+                alt="Juanita"
+                class="profile"
+              />
+              <div>
+                  <p class="nombre">Juanita</p>
+                  <p class="ultimo-mensaje">Dame un momento</p>
+              </div>
             </div>
+            <div class="chat">
+              <img
+                src="./assets/imgs/Screen Shot 2018-11-28 at 15.28.04.jpg"
+                alt="Magdalena"
+                class="profile"
+              />
+              <div>
+                  <p class="nombre">Magdalena</p>
+                  <p class="ultimo-mensaje">Puedes hacerme un favor?</p>
+              </div>
+            </div>
+            <div class="chat">
+              <img
+                src="./assets/imgs/Screen Shot 2018-11-28 at 15.28.30.jpg"
+                alt="Cristian"
+                class="profile"
+              />
+              <div>
+                  <p class="nombre">Cristian</p>
+                  <p class="ultimo-mensaje">avísame cuando llegues</p>
+              </div>
+            </div>
+            <div class="chat">
+              <img
+                src="./assets/imgs/Screen Shot 2018-11-28 at 15.30.34.jpg"
+                alt="Ignacio"
+                class="profile"
+              />
+              <div>
+                  <p class="nombre">Ignacio</p>
+                  <p class="ultimo-mensaje">Creo que lo tiene tu papá</p>
+              </div>
+            </div>
+            <div class="chat">
+              <img
+                src="./assets/imgs/Screen Shot 2018-11-28 at 15.30.54.jpg"
+                alt="Juan Pablo"
+                class="profile"
+              />
+            <div>
+                <p class="nombre">Juan Pablo</p>
+                <p class="ultimo-mensaje">ya voy llegando</p>
+            </div>
+            </div>
+            <div class="chat">
+              <img
+                src="./assets/imgs/Screen Shot 2018-11-28 at 15.31.09.jpg"
+                alt="Gonzalo"
+                class="profile"
+              />
+              <div>
+                  <p class="nombre">Gonzalo</p>
+                  <p class="ultimo-mensaje">Me llegó el pedido, gracias</p>
+              </div>
+            </div>
+            <div class="chat">
+              <img
+                src="./assets/imgs/Screen Shot 2018-11-28 at 15.32.16.jpg"
+                alt="Alberto"
+                class="profile"
+              />
+              <div>
+                  <p class="nombre">Alberto</p>
+                  <p class="ultimo-mensaje">La reunión será a las 3</p>
+              </div>
+            </div>
+            <div class="chat">
+              <img
+                src="./assets/imgs/Screen Shot 2018-11-28 at 15.32.44.jpg"
+                alt="María José"
+                class="profile"
+              />
+            <div>
+                <p class="nombre">María José</p>
+                <p class="ultimo-mensaje">Cómo estás?</p>
+            </div>
+            </div>
+          </div>
         </div>
-    </main>
-</body>
+
+
+
+        <!--SECCION DERECHA-->
+        <div class="mensajes">
+          <img src="./assets/imgs/hand.png" alt="Icono" class="manos"/>
+          <p class="comienza">Comienza el Networking</p>
+          <p>
+            Presiona el botón <strong>"Nuevo chat"</strong> para comenzar a
+            crear nuevas <br />
+            redes de contacto para tu empresa o emprendimiento.
+          </p>
+        </div>
+      </main>
+  </body>
 </html>
