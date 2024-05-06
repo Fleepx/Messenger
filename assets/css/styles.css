@@ -8,17 +8,20 @@
     display: flex;
     flex-direction: row;
     width: max;
+    height: 100%;
 }
 
 /*DERECHA*/
 .mensajes {
-    width: 70%;
+    width: 85%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    border-bottom:rgb(214, 214, 214);
+
+    background-color: #f5f5f5f3;
+    border:rgb(214, 214, 214);
     border-width: 2px;
     border-style:groove;
     border-top: none;
@@ -26,7 +29,7 @@
     border-right: none;
 }
 .manos {
-    width: 30vh;
+    width: 27vh;
 }
 .comienza  {
     font-size: 45px;
@@ -35,11 +38,10 @@
 /*IZQUIERDA*/
 .contactos {
     width: 30%;
-    height: 100vh;
+    height: max-content;
     display: flex;
     flex-direction: column;
-    width: 30vh;
-    
+    flex: 0 0 16rem;
 }
 .topnav {
     height: 6vh;
@@ -98,16 +100,18 @@ button:active {
     flex-direction: row;
     align-items: center;
     gap: 2vh;
-    padding: 2vh;
+    padding: 1.4vh;
+    padding-left: 2vh;
 }
 .chat:hover {
-    background: #E8EBE4;
+    background: #ececec5b;
 }
 .ultimo-mensaje {
     font-size: 13px;
+    color: rgba(0, 0, 0, 0.664);
 }
 .chat, .newchat, .topnav {
-    border-bottom:rgb(214, 214, 214);
+    border:rgb(214, 214, 214);
     border-width: 1px;
     border-style:groove;
     border-top: none;
